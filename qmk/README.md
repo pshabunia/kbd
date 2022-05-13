@@ -10,10 +10,9 @@ TODO: picture
 alias DOCKER_QMK="docker run --rm -ti --volume $(pwd):/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia qmkfm/qmk_firmware"
 ```
 
-
 ## Flash It!
 
-It sucks, but since recently the firmware (`layer.hex`)has to be applied to each keyboard half individually. 
+It sucks, but the firmware (`layer.hex`) has to be applied to each keyboard half individually. 
 
 As of today, the keymap (`pshabunia.json`) can be fully managed with QMK Config Web UI https://config.qmk.fm but maybe it will need to be eventually replaced or augmended with C code (in order to truly support Fn key which is surprisingly powerful mod in OSX).
 
@@ -53,3 +52,4 @@ cp .build/handwired_dactyl_promicro_default.hex keyboards/handwired/dactyl_manuf
 # More Info:
 * https://docs.qmk.fm
 * https://github.com/qmk/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform
+* https://github.com/qmk/qmk_firmware/blob/master/docs/cli_commands.md
