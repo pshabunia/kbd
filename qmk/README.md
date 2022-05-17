@@ -27,7 +27,7 @@ Each Micro uses internal EEPROM memory to store a distinguishing marker making i
 Combined with the firmware's ability to recognize the orign of power source - USB or TRS - each half can automatically align keymap with the physical layer.
 Once set, EEPROM markers can't be changed with a regular keymap flashing and need to be intentionally cleared.
 
-As you can guess from the repository content, `eeprom_left.hex` and `eeprom_right.hex` are two EEPROM bootloader files. They need to be applied to the left and right halves respectively. For each file opened in QMK Toolbox, connect USB wire to the appropriate half's Micro slot and **Flash it!** 
+ As you can guess from the repository content, `eeprom_left.hex` and `eeprom_right.hex` are two EEPROM bootloader files. They need to be applied to the left and right halves respectively. For each file opened in QMK Toolbox, connect USB wire to the appropriate half's Micro slot and **Flash it!** 
 
 In case of emergency, EEPROM bootloader files can be re-generated in the Docker.
 
