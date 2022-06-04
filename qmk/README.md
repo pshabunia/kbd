@@ -30,7 +30,7 @@ Each Micro can use its internal EEPROM memory to store a distinguishing *handedn
 
 Once set, EEPROM markers can't be changed with a regular keymap flashing and need to be intentionally cleared.
 
- The EEPROM bootloader files (`eeprom_left.hex` and `eeprom_right.hex`) need to be applied to the left and right halves respectively. For each file opened in QMK Toolbox, connect USB cable to the appropriate keyboard half and flash it using `Tools > EEPROM> Set Left/Right Hand`.
+The EEPROM bootloader files (`eeprom_left.hex` and `eeprom_right.hex`) need to be applied to the left and right halves respectively. For each file opened in QMK Toolbox, connect USB cable to the appropriate keyboard half and flash it using `Tools > EEPROM> Set Left/Right Hand`.
 
 In case of emergency, EEPROM bootloader files can be re-generated as following:
 
