@@ -63,14 +63,14 @@
       "LSFT_T(KC_SPC)",
       "RSFT_T(KC_SPC)",
       "RGUI_T(KC_ENT)",
-      "TG(1)",
+      "KC_LEFT",
       "LCTL_T(KC_BSPC)",
       "RCTL_T(KC_BSPC)",
-      "TG(1)",
-      "LT(1,KC_LEFT)",
-      "LALT_T(KC_DOWN)",
+      "KC_RGHT",
+      "KC_DOWN",
+      "LALT_T(KC_UP)",
       "RALT_T(KC_UP)",
-      "LT(1,KC_RGHT)"
+      "KC_DOWN"
     ],
     [
       "KC_F12",
@@ -120,7 +120,7 @@
       "KC_MS_U",
       "KC_MS_R",
       "KC_NO",
-      "RESET",
+      "QK_BOOT",
       "KC_TRNS",
       "KC_TRNS",
       "KC_BTN1",
