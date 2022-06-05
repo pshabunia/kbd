@@ -36,7 +36,7 @@ In case of emergency, EEPROM bootloader files can be re-generated as following:
 
 ```shell
 DOCKER_QMK /bin/bash
-# Make sure that handwired/dactyl_manuform/5x6/config.h
+# Make sure that keyboards/handwired/dactyl_manuform/5x6/config.h
 #   contains `#define EE_HANDS`. Update if necessary.
 # Now build the firmware.
 # Left Half
