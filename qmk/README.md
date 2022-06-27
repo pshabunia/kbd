@@ -6,6 +6,16 @@ TODO: picture
 * `port install avrdude`
 * [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
 
+### One Shot
+
+```shell
+docker run --rm -ti \
+--volume $(pwd):/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia \
+--workdir /qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia \
+qmkfm/qmk_firmware \
+/bin/bash -c 'qmk json2c pshabunia.json > keymap.c && qmk compile && cp /qmk_firmware/handwired_dactyl_manuform_5x6_pshabunia.hex keymap.hex'
+```
+
 ### QMK in the Docker
 
 ```shell  
@@ -18,10 +28,10 @@ alias DOCKER_QMK="docker run --rm -ti --volume $(pwd):/qmk_firmware/keyboards/ha
 The keymap (`pshabunia.json`) can be edited with [QMK Config Web UI](https://config.qmk.fm) and built as following: 
 
 ```shell
-DOCKER_QMK /bin/bash -c 'cd keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia && qmk json2c pshabunia.json > pshabunia.c && qmk compile && cp /qmk_firmware/handwired_dactyl_manuform_5x6_pshabunia.hex layout.hex'
+DOCKER_QMK /bin/bash -c 'cd keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia && qmk json2c pshabunia.json > keymap.c && qmk compile && cp /qmk_firmware/handwired_dactyl_manuform_5x6_pshabunia.hex keymap.hex'
 ```
 
-Please note, the firmware (`layer.hex`) needs to be applied individually for each keyboard half. 
+Please note, the firmware (`keymap.hex`) needs to be applied individually for each keyboard half. 
 
 ## Handedness
 
