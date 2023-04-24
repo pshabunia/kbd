@@ -1,6 +1,20 @@
-# How I stopped fearing the QMK firmware and loved Dactyl Manuform 5x6
+# QMK config for Dactyl Manuform 5x6
 
-TODO: picture 
+![Keyboard](static/keeb.jpg)
+
+
+## Layers
+QWERTY
+![Layer 0](static/layer0.png)
+Navigation / Arrows
+![Layer 1](static/layer1.png)
+Navigation / Mouse
+![Layer 4](static/layer4.png)
+Symbols
+![Layer 2](static/layer2.png)
+Numbers & Fn
+![Layer 3](static/layer3.png)
+
 
 ## Prerequisites
 * `port install avrdude`
@@ -13,7 +27,7 @@ docker run --rm -ti \
 --volume $(pwd):/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia \
 --workdir /qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia \
 qmkfm/qmk_firmware \
-/bin/bash -c 'qmk json2c pshabunia.json > keymap.c && qmk compile && cp /qmk_firmware/handwired_dactyl_manuform_5x6_pshabunia.hex keymap.hex'
+/bin/bash -c 'qmk json2c ps34.json > keymap.c && qmk compile && cp /qmk_firmware/handwired_dactyl_manuform_5x6_pshabunia.hex keymap.hex'
 ```
 
 ### QMK in the Docker
@@ -25,10 +39,10 @@ alias DOCKER_QMK="docker run --rm -ti --volume $(pwd):/qmk_firmware/keyboards/ha
 
 ## Flash It!
 
-The keymap (`pshabunia.json`) can be edited with [QMK Config Web UI](https://config.qmk.fm) and built as following: 
+The keymap (`ps34.json`) can be edited with [QMK Config Web UI](https://config.qmk.fm) and built as following: 
 
 ```shell
-DOCKER_QMK /bin/bash -c 'cd keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia && qmk json2c pshabunia.json > keymap.c && qmk compile && cp /qmk_firmware/handwired_dactyl_manuform_5x6_pshabunia.hex keymap.hex'
+DOCKER_QMK /bin/bash -c 'cd keyboards/handwired/dactyl_manuform/5x6/keymaps/pshabunia && qmk json2c ps34.json > keymap.c && qmk compile && cp /qmk_firmware/handwired_dactyl_manuform_5x6_pshabunia.hex keymap.hex'
 ```
 
 Please note, the firmware (`keymap.hex`) needs to be applied individually for each keyboard half. 
