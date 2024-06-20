@@ -3,7 +3,7 @@
   "notes": "",
   "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
   "keyboard": "handwired/dactyl_manuform/5x6",
-  "keymap": "ps34v11",
+  "keymap": "ps34v12",
   "layout": "LAYOUT_5x6",
   "layers": [
     [
@@ -68,8 +68,8 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "RESET",
-      "RESET",
+      "QK_BOOT",
+      "QK_BOOT",
       "KC_NO"
     ],
     [
@@ -87,10 +87,10 @@
       "KC_NO",
       "KC_NO",
       "KC_ESC",
-      "LGUI(KC_W)",
+      "KC_NO",
       "MO(4)",
       "KC_NO",
-      "SGUI(KC_T)",
+      "KC_NO",
       "KC_NO",
       "KC_PGUP",
       "KC_UP",
